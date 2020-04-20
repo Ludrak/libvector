@@ -2,7 +2,7 @@
 NAME			= libvector.a
 OUT_PATH		= .
 
-SRCS			= vectors.c	vector_utils.c
+SRCS			= vectors2d.c vectors2f.c vector_utils.c
 
 PATH_INC		= vectors.h
 

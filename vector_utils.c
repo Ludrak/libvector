@@ -4,7 +4,7 @@
 /**
  *  CREATES A SIMPLE 2d VECTOR FROM X and Y
  */
-t_vec2d     create_vector(float x, float y)
+t_vec2d     create_vector(double x, double y)
 {
     t_vec2d vec;
 
@@ -14,9 +14,21 @@ t_vec2d     create_vector(float x, float y)
 }
 
 /**
+ *  CREATES A SIMPLE 2d VECTOR FROM X and Y
+ */
+t_vec2f     create_vectorf(float x, float y)
+{
+    t_vec2f vec;
+
+    vec.x = x;
+    vec.y = y;
+    return (vec);
+}
+
+/**
  *  MULTIPLY A VECTOR BY SOME CONSTANT FLOAT AMOUNT
  */
-t_vec2d       vec_multf(t_vec2d v, float amt)
+t_vec2d       vec_multf(t_vec2d v, double amt)
 {
     t_vec2d vec;
     
@@ -28,7 +40,7 @@ t_vec2d       vec_multf(t_vec2d v, float amt)
 /**
  *  RETURNS THE DOT PRODUCT OF VA & VB
  */
-float           vec_dot (t_vec2d va, t_vec2d vb)
+double           vec_dot (t_vec2d va, t_vec2d vb)
 {
     return (va.x * vb.x + va.y * vb.y);
 }
