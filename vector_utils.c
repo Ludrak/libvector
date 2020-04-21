@@ -26,6 +26,18 @@ t_vec2f     create_vectorf(float x, float y)
 }
 
 /**
+ *  CREATES A SIMPLE 2d VECTOR FROM X and Y
+ */
+t_vec2i     create_vectori(int x, int y)
+{
+    t_vec2i vec;
+
+    vec.x = x;
+    vec.y = y;
+    return (vec);
+}
+
+/**
  *  MULTIPLY A VECTOR BY SOME CONSTANT FLOAT AMOUNT
  */
 t_vec2d       vec_multf(t_vec2d v, double amt)
