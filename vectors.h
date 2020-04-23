@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vectors.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coralie <coralie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: lrobino <lrobino@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 13:58:40 by lrobino           #+#    #+#             */
-/*   Updated: 2020/04/21 10:55:56 by coralie          ###   ########.fr       */
+/*   Updated: 2020/04/23 10:14:00 by lrobino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ t_vec2d     vec_norm(t_vec2d vec);
 double      vec_mag(t_vec2d vec);
 
 double      vec_dot (t_vec2d va, t_vec2d vb);
+
+t_vec2d     vec_set_mag(t_vec2d vec, float mag);
 
 
 /*

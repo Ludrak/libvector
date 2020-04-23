@@ -56,3 +56,11 @@ double           vec_dot (t_vec2d va, t_vec2d vb)
 {
     return (va.x * vb.x + va.y * vb.y);
 }
+
+t_vec2d         vec_set_mag(t_vec2d vec, float mag)
+{
+    t_vec2d v;
+    v = vec_norm(vec);
+    v = vec_multf(vec, mag);
+    return (v);
+}
