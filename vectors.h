@@ -13,8 +13,8 @@
 #ifndef VECTORS_H
 #define VECTORS_H
 
-# define PI 3.1415926535
-
+# define PI		3.1415926535
+# define TWO_PI	2 * PI
 typedef struct  s_vec2d
 {
     double x;
